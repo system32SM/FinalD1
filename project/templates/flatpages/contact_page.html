@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{% extends 'flatpages/default.html' %}
+<head>
+{% block title %}
+{{ flatpage.title }}
+<title>{{ flatpage.title }}</title>
+<p><span style="font-family: Arial; color: #333333;">{% endblock title %}</span></p>
+</head>
+<body>
+<p><span style="font-family: Arial; color: #333333;">{% block content %} </span></p>
+<h2><span style="font-family: Arial; color: #333333;">{{ flatpage.title }}</span></h2>
+    <hr>
+<h3><span style="font-family: Arial;font-size: 1.8rem;">Наши контакты:</span></h3>
+<p><span style="font-family: Arial; color: #ff9900;font-size: 1.5rem;">{{ flatpage.content }}</span></p>
+<p><span style="font-family: Arial; color: #333333;font-size: 1.5rem;">{% endblock content %}</span></p>
+</body>
+</html>
